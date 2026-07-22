@@ -1,0 +1,160 @@
+{
+  "source": "https://www.travsuntours.com/",
+  "ingestedFromHost": "travsuntours.com",
+  "pagesCrawled": 8,
+  "name": "Jamaica Tours Airport Transfers and Excursions",
+  "tagline": "Best Jamaica Tours: Montego Bay Airport Transportation Taxi",
+  "description": "Book the best Jamaica tours, Montego Bay airport transportation or taxi service with us and enjoy the island experience.",
+  "domain": "travsuntours.com",
+  "brandColor": {
+    "hex": "#0d6efd",
+    "src": "css-frequency",
+    "oklchHue": 260
+  },
+  "theme": {
+    "hue": 260
+  },
+  "fonts": [],
+  "logo": null,
+  "logoNote": "Logo not auto-found — grab the navbar logo manually",
+  "favicon": "https://www.travsuntours.com/wp-content/uploads/2024/02/cropped-android-chrome-512x512-1-180x180.png",
+  "images": [
+    "/ingested/travsuntours/img-001.webp"
+  ],
+  "imageCount": 1,
+  "social": {
+    "email": "travsuntours@yahoo.com",
+    "instagram": "https://www.instagram.com/travsuntours/"
+  },
+  "whatsapp": null,
+  "phone": "18762812871",
+  "location": null,
+  "sectionOrder": [
+    "Jamaica Tours & Excursions",
+    "Best Price Guarantee",
+    "Ready for an unforgetable tour?",
+    "Quick Links",
+    "Contact Info",
+    "Signin",
+    "Reset Password"
+  ],
+  "navItems": [
+    {
+      "text": "Login Register HomeToursTransportationGalleryReviewsAbout UsContact Us +1 876-281-2871 travsuntours@yahoo.com Facebook Instagram Tripadvisor HomeToursTransportationGalleryReviewsAbout UsContact Us BOOK NOW",
+      "url": "https://www.travsuntours.com/undefined",
+      "path": "/undefined"
+    }
+  ],
+  "footerItems": [
+    {
+      "text": "Tours",
+      "url": "https://www.travsuntours.com/tours-page/",
+      "path": "/tours-page"
+    },
+    {
+      "text": "Transportation",
+      "url": "https://www.travsuntours.com/transportation/",
+      "path": "/transportation"
+    },
+    {
+      "text": "About Us",
+      "url": "https://www.travsuntours.com/about/",
+      "path": "/about"
+    },
+    {
+      "text": "Contact Us",
+      "url": "https://www.travsuntours.com/confirmation/",
+      "path": "/confirmation"
+    }
+  ],
+  "innerPages": [
+    {
+      "path": "/add_services/",
+      "title": "Add Services - Jamaica Tours Airport Transfers and ExcursionsAdd Services - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/tours-page/",
+      "title": "Tours Page - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Jamaica Tours & Excursions",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/transportation/",
+      "title": "Transportation - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Transportation",
+        "Jamaica Airport Transfers & Hotels",
+        "Jamaica VIP & Private Airport Transfer",
+        "End point",
+        "Your Itinerary",
+        "This product benefits from:",
+        "Additional information",
+        "What They’re Saying",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/gallery/",
+      "title": "Gallery - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Explore Jamaica",
+        "Ready for an unforgetable tour?",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/reviews/",
+      "title": "Reviews - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Reviews",
+        "What They’re Saying",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/about/",
+      "title": "About Us - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "About Us",
+        "Dare to Explore with Trav Sun Tours",
+        "What They’re Saying",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    },
+    {
+      "path": "/contact/",
+      "title": "Contact Us - Jamaica Tours Airport Transfers and Excursions",
+      "sections": [
+        "Contact Us",
+        "We’d love to hear from you.",
+        "Quick Links",
+        "Contact Info",
+        "Signin",
+        "Reset Password"
+      ]
+    }
+  ]
+}

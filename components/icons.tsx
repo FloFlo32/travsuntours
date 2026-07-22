@@ -30,6 +30,51 @@ export function XIcon({ className }: { className?: string }) {
   );
 }
 
+export function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden
+      className={cn("size-4", className)}
+    >
+      <path d="M13.5 21v-8.06h2.7l.4-3.14h-3.1V7.9c0-.91.25-1.53 1.56-1.53h1.67V3.56A22 22 0 0 0 14.06 3.4c-2.4 0-4.05 1.47-4.05 4.16v2.34H7.3v3.14h2.71V21h3.49Z" />
+    </svg>
+  );
+}
+
+export function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.8}
+      aria-hidden
+      className={cn("size-4", className)}
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="3.6" />
+      <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function TripadvisorIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden
+      className={cn("size-4", className)}
+    >
+      <path d="M12 6.24c-2.66 0-5.02.96-6.84 2.5H0l1.98 2.16a4.6 4.6 0 0 0-.76 2.54 4.65 4.65 0 0 0 4.65 4.65 4.63 4.63 0 0 0 3.83-2.02L12 18.5l2.3-2.43a4.63 4.63 0 0 0 3.83 2.02A4.65 4.65 0 0 0 22.78 13.44a4.6 4.6 0 0 0-.76-2.54L24 8.74h-5.16A11.55 11.55 0 0 0 12 6.24Zm-6.13 9.83a2.63 2.63 0 1 1 0-5.26 2.63 2.63 0 0 1 0 5.26Zm12.26 0a2.63 2.63 0 1 1 0-5.26 2.63 2.63 0 0 1 0 5.26ZM12 8.32c1.65 0 3.2.42 4.53 1.16a4.63 4.63 0 0 0-4.42 3.66h-.22a4.63 4.63 0 0 0-4.42-3.66A10.3 10.3 0 0 1 12 8.32Z" />
+      <circle cx="5.87" cy="13.44" r="1.35" />
+      <circle cx="18.13" cy="13.44" r="1.35" />
+    </svg>
+  );
+}
+
 export function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <svg
