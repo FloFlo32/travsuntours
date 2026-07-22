@@ -1,83 +1,65 @@
 import Link from "next/link";
-import { ArrowRight, Palette, Zap, Rocket } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Phone, ShieldCheck, Tag, Zap, Users } from "lucide-react";
 import { brand } from "@/brand.config";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { GridPattern } from "@/components/magic/grid-pattern";
-import { BorderBeam } from "@/components/magic/border-beam";
-import { AuroraBackground } from "@/components/magic/aurora-background";
-import { Reveal } from "@/components/magic/reveal";
 
-const previews = [
-  { icon: Palette, title: "Design system", body: "OKLCH tokens, one hue, full dark mode." },
-  { icon: Zap, title: "Motion built-in", body: "Reveals and beams, reduced-motion safe." },
-  { icon: Rocket, title: "One-command deploy", body: "GitHub + Vercel + domain from a script." },
+const trust = [
+  { icon: ShieldCheck, label: "Trust and Safety" },
+  { icon: Tag, label: "Best Price Guarantee" },
+  { icon: Zap, label: "Easy & Quick Booking" },
+  { icon: Users, label: "Best Travel Agents" },
 ];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <AuroraBackground />
-      <GridPattern />
+    <section className="relative">
+      <div className="relative h-[62vh] min-h-[420px] w-full overflow-hidden sm:h-[72vh]">
+        <Image
+          src="/ingested/travsuntours/mystic-mountain-tour.webp"
+          alt="Jamaica Tours and excursions"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
 
-      <div className="container-px mx-auto max-w-6xl pt-20 pb-16 sm:pt-28 sm:pb-24 text-center">
-        <Reveal>
-          <Badge variant="accent" className="mx-auto">
-            <span className="font-mono">{brand.social.github}</span>
-          </Badge>
-        </Reveal>
-
-        <Reveal delay={0.06}>
-          <h1 className="mx-auto mt-6 max-w-4xl text-balance text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
-            Ship a website that looks{" "}
-            <span className="text-gradient">designed</span>, not generated.
+      <div className="container-px relative z-10 mx-auto -mt-24 max-w-6xl sm:-mt-32">
+        <div className="rounded-3xl border border-border bg-card p-8 shadow-xl shadow-primary/10 sm:p-14">
+          <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-primary">
+            Montego Bay, Jamaica
+          </span>
+          <h1 className="mt-4 max-w-2xl text-balance text-4xl font-bold leading-[1.05] sm:text-6xl">
+            Jamaica Tours & Excursions
           </h1>
-        </Reveal>
-
-        <Reveal delay={0.12}>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+          <p className="mt-5 max-w-xl text-lg text-muted-foreground">
             {brand.description}
           </p>
-        </Reveal>
-
-        <Reveal delay={0.18}>
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
-              <Link href="#cta">
-                Start building <ArrowRight className="size-4" />
+              <Link href="/tours-page">
+                Browse Tours <ArrowRight className="size-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#features">See what's inside</Link>
+              <a href={`tel:+${brand.contact.phone}`}>
+                <Phone className="size-4" /> +1 876-281-2871
+              </a>
             </Button>
           </div>
-        </Reveal>
 
-        {/* Product preview — flat surface, one traveling beam as the single featured motion */}
-        <Reveal delay={0.26}>
-          <div className="relative mx-auto mt-16 max-w-4xl">
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card text-left shadow-xl shadow-primary/5">
-              <BorderBeam />
-              <div className="flex items-center gap-1.5 border-b border-border px-4 py-3">
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="size-3 rounded-full bg-muted-foreground/30" />
-                <span className="ml-3 font-mono text-xs text-muted-foreground">
-                  {brand.domain}
+          <div className="mt-10 grid grid-cols-2 gap-4 border-t border-border pt-8 sm:grid-cols-4">
+            {trust.map((t) => (
+              <div key={t.label} className="flex items-center gap-2.5">
+                <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent">
+                  <t.icon className="size-4.5" />
                 </span>
+                <span className="text-sm font-medium leading-tight">{t.label}</span>
               </div>
-              <div className="grid gap-px bg-border sm:grid-cols-3">
-                {previews.map((p) => (
-                  <div key={p.title} className="bg-card p-5">
-                    <p.icon className="size-5 text-primary" />
-                    <p className="mt-3 font-medium">{p.title}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">{p.body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   );

@@ -1,62 +1,43 @@
-import { Terminal, Paintbrush, Globe } from "lucide-react";
+import { ShieldCheck, Zap, Compass } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/magic/reveal";
 
-const steps = [
+const points = [
   {
-    icon: Terminal,
-    step: "01",
-    title: "Clone & name it",
-    body: "Edit one file — brand.config.ts — then run npm run brand. Name, colors, fonts, domain and metadata propagate across the whole project.",
-    code: "npm run brand",
+    icon: Zap,
+    title: "Easy & Quick Booking",
+    body: "There are many variations of but the majority have simply free text.",
   },
   {
-    icon: Paintbrush,
-    step: "02",
-    title: "Build with the system",
-    body: "Compose pre-built sections and animated primitives. Impeccable + the bundled skills keep new pages on-brand automatically.",
-    code: "npx shadcn@latest add card",
-  },
-  {
-    icon: Globe,
-    step: "03",
-    title: "Ship in one command",
-    body: "Drop your GitHub + Vercel tokens into .env and run the deploy script. Repo created, project linked, custom domain wired.",
-    code: "npm run ship",
+    icon: Compass,
+    title: "Best Tour Selection",
+    body: "There are many variations of but the majority have simply free text.",
   },
 ];
 
 export function Features() {
   return (
-    <section id="features" className="container-px mx-auto max-w-6xl py-24">
+    <section id="features" className="container-px mx-auto max-w-6xl py-20 sm:py-28">
       <Reveal className="max-w-2xl">
-        <h2 className="text-4xl font-bold sm:text-5xl">
-          Three steps to a site that ships
+        <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+          Why book with us
+        </span>
+        <h2 className="mt-3 flex items-center gap-3 text-4xl font-bold sm:text-5xl">
+          <ShieldCheck className="size-9 text-accent" aria-hidden />
+          Best Price Guarantee
         </h2>
-        <p className="mt-4 text-muted-foreground">
-          The whole point of a starter: your colleague goes from zero to a
-          branded, deployed site in an afternoon.
-        </p>
       </Reveal>
 
-      <RevealGroup className="mt-14 grid gap-6 md:grid-cols-3">
-        {steps.map((s) => (
+      <RevealGroup className="mt-12 grid gap-6 md:grid-cols-2">
+        {points.map((p) => (
           <RevealItem
-            key={s.step}
-            className="relative flex flex-col rounded-2xl border border-border bg-card p-7"
+            key={p.title}
+            className="group flex flex-col gap-4 rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
           >
-            <div className="flex items-center justify-between">
-              <div className="grid size-12 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                <s.icon className="size-6" />
-              </div>
-              <span className="font-mono text-4xl font-bold text-foreground/10">
-                {s.step}
-              </span>
+            <div className="grid size-12 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+              <p.icon className="size-6" />
             </div>
-            <h3 className="mt-5 text-xl font-semibold">{s.title}</h3>
-            <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.body}</p>
-            <code className="mt-5 block rounded-lg border border-border bg-muted/50 px-3 py-2 font-mono text-xs text-foreground/80">
-              <span className="text-primary">$</span> {s.code}
-            </code>
+            <h3 className="text-xl font-semibold">{p.title}</h3>
+            <p className="text-muted-foreground">{p.body}</p>
           </RevealItem>
         ))}
       </RevealGroup>

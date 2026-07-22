@@ -1,9 +1,8 @@
 import { Navbar } from "@/components/sections/navbar";
 import { Hero } from "@/components/sections/hero";
-import { LogoCloud } from "@/components/sections/logo-cloud";
-import { Bento } from "@/components/sections/bento";
 import { Features } from "@/components/sections/features";
-import { Proof } from "@/components/sections/stats";
+import { ToursPreview } from "@/components/sections/tours-preview";
+import { AboutTeaser } from "@/components/sections/about-teaser";
 import { CTA } from "@/components/sections/cta";
 import { Footer } from "@/components/sections/footer";
 
@@ -13,10 +12,9 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <LogoCloud />
         <Features />
-        <Bento />
-        <Proof />
+        <ToursPreview />
+        <AboutTeaser />
         <CTA />
       </main>
       <Footer />

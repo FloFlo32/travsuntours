@@ -20,34 +20,34 @@
 
 export const brand = {
   /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Aurora",
+  name: "Trav Sun Tours",
 
   /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "The starter pack for shipping websites that don't look AI-built.",
+  tagline: "Doing travel in comfort and style.",
 
   /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "A production-grade Next.js + Tailwind + shadcn starter with a real design system, motion, and one-command deploy to Vercel.",
+    "Book the best Jamaica tours, Montego Bay airport transportation or taxi service with us and enjoy the island experience.",
 
   /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "aurora.getyetti.com",
+  domain: "travsuntours.getyetti.com",
 
   /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
     /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 265,
+    hue: 70,
     /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
     corners: "rounded" as "sharp" | "rounded" | "pill",
     /** Default color scheme on first paint. */
-    defaultScheme: "dark" as "light" | "dark",
+    defaultScheme: "light" as "light" | "dark",
   },
 
   /** Fonts. Any Google Font name works — edit, then run `npm run brand`. */
   fonts: {
     /** Big headlines. Pick something with PERSONALITY — this is what breaks the AI look. */
-    display: "Space Grotesk",
+    display: "Fraunces",
     /** Body / UI text. Keep it clean and readable. */
-    sans: "Geist",
+    sans: "Plus Jakarta Sans",
     /** Code / labels / kbd. */
     mono: "JetBrains Mono",
   },
@@ -56,7 +56,11 @@ export const brand = {
   social: {
     github: "your-org/your-repo",
     x: "yourhandle",
-    email: "hello@aurora.example.com",
+    email: "travsuntours@yahoo.com",
+    facebook: "https://www.facebook.com/p/Trav-Sun-Tours-100063528042395/",
+    instagram: "https://www.instagram.com/travsuntours/",
+    tripadvisor:
+      "https://www.tripadvisor.com/Attraction_Review-g147311-d20217192-Reviews-Trav_Sun_Tours-Montego_Bay_Saint_James_Parish_Jamaica.html",
   },
 
   /**
@@ -67,9 +71,9 @@ export const brand = {
    */
   contact: {
     whatsapp: "",
-    phone: "",
-    address: "",
-    mapQuery: "",
+    phone: "18762812871",
+    address: "Gloucester Avenue, Montego Bay, JM",
+    mapQuery: "Gloucester Avenue, Montego Bay, Jamaica",
   },
 } as const;
 
